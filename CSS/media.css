@@ -8,12 +8,6 @@
 }
 
 @media screen and (max-height: 800px){
-    #calculator{
-        height: 65%;
-    }
-}
-
-@media screen and (max-height: 700px){
     #display{
         height: 120px;
     }
@@ -26,6 +20,15 @@
     }
     .displayBottom{
         font-size: 2rem;
+    }
+    #calculator{
+        height: 65%;
+    }
+}
+
+@media screen and (max-height: 700px){
+    #calculator{
+        height: 62%;
     }
 }
 @media screen and (max-height: 600px){
