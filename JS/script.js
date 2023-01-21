@@ -323,6 +323,9 @@ ae.addEventListener("click",() =>{
     while(displayOperations.length != 0){
         displayOperations.pop();
     }
+    while(displayArray.length != 0){
+        displayArray.pop();
+    }
     numberString = "";
     displayBottom[0].innerText = "0";
     displayUpper[0].innerText = "0";
