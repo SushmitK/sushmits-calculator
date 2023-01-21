@@ -1,0 +1,272 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+}
+
+#body{
+    /* colors */
+
+    --color-1: #ffffff;
+    --color-2: #cdb7af;
+    --color-3: #c4ab9c;
+    --color-4: #A67F68;
+    --color-5: #BF8975;
+    --color-6: rgba(104, 201, 142, 0.8);
+    --color-7: rgba(192, 192, 201, 0.8);
+    --color-8: rgba(192, 210, 208, 0.8);
+    --color-9: rgba(94, 179, 128, 0.8);
+    --color-10: rgba(173, 173, 179, 0.8);
+    --color-11: rgba(190, 190, 199, 0.8);
+    --color-12: rgba(53, 161, 96, 0.8);
+    --main-1: rgb(218, 202, 202);
+    --main-2: rgb(0, 0, 0);
+    --grad-1: linear-gradient(45deg, rgb(221, 230, 235) 0%, rgb(206, 200, 198) 100%);
+}
+
+body{
+
+    /* colors */
+
+    --color-1: #050A0D;
+    --color-2: #402F29;
+    --color-3: #735645;
+    --color-4: #A67F68;
+    --color-5: #BF8975;
+    --color-6: rgb(54, 54, 128,0.8);
+    --color-7: rgba(27, 27, 28, 0.8);
+    --color-8: rgb(31,31,34,0.8);
+    --color-9: rgba(39, 39, 107, 0.8);
+    --color-10: rgba(48, 48, 52, 0.8);
+    --color-11: rgba(45, 45, 46, 0.8);
+    --color-12: rgba(57, 57, 128, 0.8);
+    --main-1: black;
+    --main-2: rgb(213, 198, 198);
+
+    /* fonts */
+
+    --font-1: 'Arvo';
+    --font-2: 'Montserrat';
+    --font-3: 'Lato';
+
+    /* gradients */
+
+    --grad-1: linear-gradient(45deg, rgba(5,10,13,1) 0%, rgba(19,16,15,1) 100%);
+}
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: var(--grad-1);
+    color: var(--main-2);
+    overflow: hidden;
+}
+
+
+
+/* all */
+a{  
+    font-family: var(--font-1);
+    color: var(--main-2);
+    text-decoration: none;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+/* nav */
+#navBar{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+#navBar a{
+    font-size: 1.4rem;
+}
+
+/* ------------------------------------------------------------- */
+/* .sideMenu */
+
+.sideMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+.sideMenuLogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 35px;
+    border-radius: 2px;
+    background-color: transparent;
+    margin: 10px 5px;
+    border: none;
+}
+
+.sideMenuLogo:hover{
+    background-color: var(--color-2);
+}
+.sideMenuLogo:active p{
+    width: 12px;
+}
+.sideMenuLogo>p{
+    width: 25px;
+    height: 2px;
+    border-radius: 100px;
+    margin: 2px 4px;
+    background-color: var(--main-2);
+    transition: width 0.3s ease-in-out;
+}
+
+/* ------------------------------------------------------------- */
+/* darkMode Toggle */
+
+.darkMode{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 5px;
+    
+}
+
+.darkModeButton{
+    width: 60%;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--color-5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.darkModeButton>p{
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0px 25px 0.5px 0px;
+    transition: margin 0.3s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.darkModeButton>p img{
+    width: 20px;
+    height: 20px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+/* main */
+
+main{
+    height: 92.5%;
+    margin: 10px 10px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* -------------------------------------------------------------------- */
+/* display */
+#display{
+    width: 100%;
+    height: 160px;
+    background-color: var(--color-8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+#display>p{
+    width: 95%;
+    height: 30%;
+    background-color: transparent;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-family: var(--font-1);
+}
+.displayUpper{
+    font-size: 2rem;
+    color: rgb(156, 143, 119);
+}
+#display>.operationSymbol{
+    font-size: 1.2rem;
+    align-items: center;
+    color: var(--main-2);
+}
+.displayBottom{
+    font-size: 3rem;
+    color: var(--main-2);
+}
+/* -------------------------------------------------------------------- */
+/* calculator */
+#calculator{
+    width: 100%;
+    height: 70%;
+    margin-top: 30px;
+    display: grid;
+    row-gap: 4px;
+    transition: color 0.2s ease-in-out;
+}
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 4px;
+}
+.row>button{
+    color: var(--main-2);
+    font-size: 1.5rem;
+    background-color: var(--color-7);
+    border: none;
+    border-radius: 10px;
+    font-family: var(--font-3);
+}
+.row>button:hover{
+    background-color: var(--color-8);
+}
+.row>button:active{
+    background-color: var(--color-10);
+}
+.row>button p{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.operation p{
+    font-size: 2rem;
+}
+.row>.digits{
+    background-color: var(--color-8);
+}
+.row>.digits:hover{
+    background-color: var(--color-7);
+}
+.row>.digits:active{
+    background-color: var(--color-11);
+}
+#equal{
+    background-color: var(--color-6);
+}
+#equal:hover{
+    background-color: var(--color-9);
+}
+#equal:active{
+    background-color: var(--color-12);
+}

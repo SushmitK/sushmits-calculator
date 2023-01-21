@@ -1,0 +1,45 @@
+@media screen and (max-height: 850px){
+    main{
+        justify-content: flex-start;
+    }
+    #calculator{
+        height: 71%;
+    }
+}
+
+@media screen and (max-height: 800px){
+    #calculator{
+        height: 65%;
+    }
+}
+
+@media screen and (max-height: 700px){
+    #display{
+        height: 120px;
+    }
+    .displayUpper{
+        font-size: 1.5rem;
+    }
+    #display>.operationSymbol{
+        font-size: 1rem;
+        align-items: center;
+    }
+    .displayBottom{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-height: 600px){
+    #calculator{
+        height: 60%;
+    }
+}
+@media screen and (max-height: 550px){
+    #calculator{
+        height: 57.5%;
+    }
+}
+@media screen and (max-height: 500px){
+    #calculator{
+        height: 50%;
+    }
+}
