@@ -59,7 +59,11 @@ body{
     width: 100vw;
     background: var(--grad-1);
     color: var(--main-2);
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+body::-webkit-scrollbar{
+    display: none;
 }
 
 
