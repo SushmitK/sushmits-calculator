@@ -33,7 +33,10 @@ let answersArray = new Array(0);
 let numberString = "";
 let prevOperation = "";
 
-
+let display = document.getElementById("display");
+body.addEventListener("click",()=>{
+    display.setAttribute("style","border: none");
+});
 
 
 // --------------------------------------------------------------------------------------------------------------

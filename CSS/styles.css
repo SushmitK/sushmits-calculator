@@ -194,6 +194,7 @@ main{
     align-items: center;
     border-radius: 20px;
     overflow-x: scroll;
+    border-bottom: 1px solid white;
 }
 #display::-webkit-scrollbar{
     display: none;
@@ -209,7 +210,7 @@ main{
     font-family: var(--font-1);
     overflow-x: scroll;
 }
-#display> p::-webkit-scrollbar{
+#display>p::-webkit-scrollbar{
     display: none;
 }
 .displayUpper{
