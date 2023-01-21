@@ -317,23 +317,25 @@ mod.addEventListener("click",() =>{
 });
 
 ae.addEventListener("click",() =>{
-    while(displayArray.length != 0){
-        displayArray.pop();
-    }
-    while(displayOperations.length != 0){
-        displayOperations.pop();
-    }
-    while(displayArray.length != 0){
-        displayArray.pop();
-    }
-    numberString = "";
-    displayBottom[0].innerText = "0";
-    displayUpper[0].innerText = "0";
-    operationSymbol[0].innerText = "";
+    // while(displayArray.length != 0){
+    //     displayArray.pop();
+    // }
+    // while(displayOperations.length != 0){
+    //     displayOperations.pop();
+    // }
+    // while(displayArray.length != 0){
+    //     displayArray.pop();
+    // }
+    // numberString = "";
+    // prevOperation = "";
+    // displayBottom[0].innerText = "0";
+    // displayUpper[0].innerText = "0";
+    // operationSymbol[0].innerText = "";
+    window.location.reload();
 });
 
 ce.addEventListener("click",()=>{
-     numberString = "";
+    numberString = "";
     displayBottom[0].innerText = "0";
 });
 
