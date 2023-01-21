@@ -193,6 +193,10 @@ main{
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    overflow-x: scroll;
+}
+#display::-webkit-scrollbar{
+    display: none;
 }
 #display>p{
     width: 95%;
@@ -203,6 +207,10 @@ main{
     justify-content: flex-end;
     align-items: flex-end;
     font-family: var(--font-1);
+    overflow-x: scroll;
+}
+#display> p::-webkit-scrollbar{
+    display: none;
 }
 .displayUpper{
     font-size: 2rem;
