@@ -378,6 +378,8 @@ darkModeButton.addEventListener("click", () => {
 
 
 
+
+
 // // --------------------------------------------------------------------------------------------------------
 // // functions
 
@@ -432,6 +434,9 @@ function buttonClick(value){
 }
 
 function handleNumber(value){
+    if(lastEqual === true){
+        lastEqual = false;
+    }
     if(buffer == "0"){
         if(value === "."){
             if(dotCount === 0){
@@ -452,6 +457,37 @@ function handleNumber(value){
         }
     }
     render();
+}
+
+function handleMath(value){
+    if(lastEqual === true){
+        prevSymbol = value;
+        buffer ="0";
+        lastEqual = false;
+        return;
+    }
+    if(buffer === "0" || buffer === "0."){
+        prevSymbol = value;
+        render();
+        return;
+    }
+    if(runningTotal === 0){
+        runningTotal = parseFloat(buffer);
+    }else{
+        if(prevSymbol === "+"){
+            runningTotal += parseFloat(buffer);
+        }else if(prevSymbol == "-"){
+            runningTotal -= parseFloat(buffer);
+        }else if(prevSymbol == "*"){
+            runningTotal *= parseFloat(buffer);
+        }else if(prevSymbol == "/"){
+            runningTotal /= parseFloat(buffer);
+        }else if(prevSymbol == "%"){
+            runningTotal %= parseFloat(buffer);
+        }
+    }
+    buffer = "0";
+    prevSymbol = value;
 }
 
 function handleOpp(value){
@@ -532,31 +568,6 @@ function handleequals(){
     operationSymbol.innerText = "";
     displayUpper.innerText = "";
     lastEqual = true;
-}
-function handleMath(value){
-    if(lastEqual === true){
-        prevSymbol = value;
-        buffer ="0";
-        lastEqual = false;
-        return;
-    }
-    if(runningTotal === 0){
-        runningTotal = parseFloat(buffer);
-    }else{
-        if(prevSymbol === "+"){
-            runningTotal += parseFloat(buffer);
-        }else if(prevSymbol == "-"){
-            runningTotal -= parseFloat(buffer);
-        }else if(prevSymbol == "*"){
-            runningTotal *= parseFloat(buffer);
-        }else if(prevSymbol == "/"){
-            runningTotal /= parseFloat(buffer);
-        }else if(prevSymbol == "%"){
-            runningTotal %= parseFloat(buffer);
-        }
-    }
-    buffer = "0";
-    prevSymbol = value;
 }
 
 
