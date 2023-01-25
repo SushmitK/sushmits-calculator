@@ -8,6 +8,7 @@ Project Name: sushmits-calculator
 Tech used: HTML, CSS , JavaScript
 
 Repository link: https://github.com/SushmitK/sushmits-calculator.git
+
 Deployment link: https://sushmits-calculator.netlify.app/
 
 
