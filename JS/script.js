@@ -460,6 +460,7 @@ function handleNumber(value){
 }
 
 function handleMath(value){
+
     if(lastEqual === true){
         prevSymbol = value;
         buffer ="0";
@@ -487,6 +488,7 @@ function handleMath(value){
         }
     }
     buffer = "0";
+    dotCount = 0;
     prevSymbol = value;
 }
 
